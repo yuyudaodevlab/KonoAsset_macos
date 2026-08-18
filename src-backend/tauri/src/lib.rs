@@ -99,11 +99,8 @@ pub fn run() {
                 },
             ))));
 
-            #[cfg(any(windows, target_os = "linux"))]
-            {
-                if let Err(e) = app.deep_link().register_all() {
-                    log::error!("Failed to register deep links: {}", e);
-                }
+            if let Err(e) = app.deep_link().register_all() {
+                log::error!("Failed to register deep links: {}", e);
             }
 
             let args = std::env::args().collect::<Vec<_>>();
