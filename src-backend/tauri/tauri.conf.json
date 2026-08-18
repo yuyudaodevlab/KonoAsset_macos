@@ -47,6 +47,9 @@
       "desktop": {
         "schemes": ["konoasset"]
       }
+    },
+    "updater": {
+      "pubkey": ""
     }
   }
 }
