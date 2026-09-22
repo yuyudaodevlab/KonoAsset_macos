@@ -17,6 +17,8 @@ specta.workspace = true
 trash.workspace = true
 uuid.workspace = true
 thiserror.workspace = true
+image = { version = "0.25.9" }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
 showfile = { version = "0.1.1" }
 opener = { version = "0.8.0" }
-image = { version = "0.25.9" }
